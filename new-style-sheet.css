@@ -26,7 +26,7 @@
 .istanbul-dondurma {
   display: block;
 }
-@media (max-width: 525px) {
+@media (max-width: 385px) {
   .istanbul-dondurma {
     display: none;
   }
