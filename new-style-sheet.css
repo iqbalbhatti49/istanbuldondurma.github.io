@@ -33,7 +33,7 @@
 }
 
 /* for add new-istandul-dondurma */
-.new-istandul-dondurma {
+.new-istandul-dondurma, .top-links {
   display: block;
 }
 @media (min-width: 525px) {
@@ -41,7 +41,11 @@
     display: none;
   }
 }
-
+@media (min-width: 768px) {
+  .top-links {
+    display: none;
+  }
+}
 
 .top-nav {
   background-color: #10acb4;
