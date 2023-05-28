@@ -22,6 +22,26 @@
     display: none;
   }
 }
+/* when website open in mobile */
+.istanbul-dondurma {
+  display: block;
+}
+@media (max-width: 499px) {
+  .istanbul-dondurma {
+    display: none;
+  }
+}
+
+/* for add new-istandul-dondurma */
+.new-istandul-dondurma {
+  display: block;
+}
+@media (min-width: 500px) {
+  .new-istandul-dondurma {
+    display: none;
+  }
+}
+
 
 .top-nav {
   background-color: #10acb4;
