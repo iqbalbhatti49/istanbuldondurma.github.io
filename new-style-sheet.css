@@ -33,13 +33,16 @@
 }
 
 /* for add new-istandul-dondurma */
-.new-istandul-dondurma, .top-links {
+.new-istandul-dondurma {
   display: block;
 }
 @media (min-width: 525px) {
   .new-istandul-dondurma {
     display: none;
   }
+}
+.top-links {
+    display: block;
 }
 @media (min-width: 768px) {
   .top-links {
