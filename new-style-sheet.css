@@ -36,7 +36,7 @@
 .new-istandul-dondurma {
   display: block;
 }
-@media (min-width: 500px) {
+@media (min-width: 450px) {
   .new-istandul-dondurma {
     display: none;
   }
