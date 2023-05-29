@@ -7,8 +7,18 @@
     <meta content="Free HTML Templates" name="keywords" />
     <meta content="Free HTML Templates" name="description" />
 
-    <!-- Favicon -->
-    <link href="img/logo.png" rel="icon" />
+    <!-- JQuery or JavaScript-->
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+
+    <!-- Ajax -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -30,6 +40,7 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="new-style-sheet.css" />
+    <link rel="stylesheet" href="styles-for-deals.css" />
   </head>
 
   <body>
@@ -609,75 +620,110 @@
     </div>
     <!-- Services End -->
 
-    <!-- Portfolio Start -->
-    <div class="container-fluid my-5 py-5 px-0">
-      <div class="row justify-content-center m-0">
-        <div class="col-lg-5">
-          <h1 class="section-title position-relative text-center mb-5">
-            We Catering Yours Events
-            <span style="color: #f22">Booking Now</span>
-          </h1>
-        </div>
-      </div>
-      <div class="row m-0 portfolio-container">
-        <div class="col-lg-3 col-md-6 p-0 portfolio-item">
-          <div class="position-relative overflow-hidden">
-            <img
-              class="img-fluid w-100"
-              src="img/menu-1.jpg"
-              alt="Rs 200/- per head for 100 persons"
-            />
-            <a
-              class="portfolio-btn"
-              href="img/main-menu1.jpg"
-              data-lightbox="portfolio"
-            >
-              <i class="fa fa-plus istanbul" style="font-size: 100px"></i>
-            </a>
+    <!-- Booking Start -->
+    <div class="container-fluid py-5">
+      <div class="container py-5">
+        <div
+          class="row"
+          id="header-carousel"
+          class="carousel slide row"
+          data-ride="carousel"
+        >
+          <div class="col-lg-12">
+            <h1 class="section-title position-relative text-center mb-5">
+              We Catering Yours Events <br />
+              <span style="color: #f22">Booking Now</span>
+            </h1>
+            <br /><br />
           </div>
+          <div class="col-lg-3 col-mb-6 mb-6 pb-5 pb-lg-0"></div>
         </div>
-        <div class="col-lg-3 col-md-6 p-0 portfolio-item">
-          <div class="position-relative overflow-hidden">
-            <img class="img-fluid w-100" src="img/menu-2.jpg" alt="" />
-            <a
-              class="portfolio-btn"
-              href="img/main-menu1.jpg"
-              data-lightbox="portfolio"
-            >
-              <i class="fa fa-plus istanbul" style="font-size: 100px"></i>
-            </a>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 p-0 portfolio-item">
-          <div class="position-relative overflow-hidden">
-            <img class="img-fluid w-100" src="img/menu-3.jpg" alt="" />
-            <a
-              class="portfolio-btn"
-              href="img/main-menu1.jpg"
-              data-lightbox="portfolio"
-            >
-              <i class="fa fa-plus istanbul" style="font-size: 100px"></i>
-            </a>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 p-0 portfolio-item">
-          <div class="position-relative overflow-hidden">
-            <img class="img-fluid w-100" src="img/menu-4.jpg" alt="" />
-            <a
-              class="portfolio-btn"
-              href="img/main-menu1.jpg"
-              data-lightbox="portfolio"
-            >
-              <i class="fa fa-plus istanbul" style="font-size: 100px"></i>
-            </a>
+        <div class="row">
+          <div class="col-12">
+            <div class="owl-carousel service-carousel">
+              <div class="service-item">
+                <!-- 1st deal -->
+                <div class="pricingTable10">
+                  <div class="pricingTable-header">
+                    <h3 class="heading">Deal#1</h3>
+                    <span class="price-value">
+                      <span class="currency">Rs</span> 150
+                      <span class="month">/person</span>
+                    </span>
+                  </div>
+                  <div class="pricing-content">
+                    <ul>
+                      <li><b>About Deal</b></li>
+                      <li>200+ Peoples</li>
+                    </ul>
+                    <a href="tel:+923218826808" class="read">Book Now</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2nd Deal -->
+              <div class="service-item">
+                <div class="pricingTable10">
+                  <div class="pricingTable-header">
+                    <h3 class="heading">Deal#2</h3>
+                    <span class="price-value">
+                      <span class="currency">Rs</span> 170
+                      <span class="month">/person</span>
+                    </span>
+                  </div>
+                  <div class="pricing-content">
+                    <ul>
+                      <li><b>About Deal</b></li>
+                      <li>200 Peoples</li>
+                    </ul>
+                    <a href="tel:+923218826808" class="read">Book Now</a>
+                  </div>
+                </div>
+              </div>
+              <!-- 3rd Deal -->
+              <div class="service-item">
+                <div class="pricingTable10">
+                  <div class="pricingTable-header">
+                    <h3 class="heading">Deal#3</h3>
+                    <span class="price-value">
+                      <span class="currency">Rs</span> 190
+                      <span class="month">/person</span>
+                    </span>
+                  </div>
+                  <div class="pricing-content">
+                    <ul>
+                      <li><b>About Deal</b></li>
+                      <li>150 Peoples</li>
+                    </ul>
+                    <a href="tel:+923218826808" class="read">Book Now</a>
+                  </div>
+                </div>
+              </div>
+              <!-- 4th Deal -->
+              <div class="service-item">
+                <div class="pricingTable10">
+                  <div class="pricingTable-header">
+                    <h3 class="heading">Deal#4</h3>
+                    <span class="price-value">
+                      <span class="currency">Rs</span> 200
+                      <span class="month">/person</span>
+                    </span>
+                  </div>
+                  <div class="pricing-content">
+                    <ul>
+                      <li><b>About Deal</b></li>
+                      <li>100 Peoples</li>
+                    </ul>
+                    <a href="tel:+923218826808" class="read">Book Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Portfolio End -->
-    <br />
-    <br />
-    <br />
+    <!-- End Booking -->
 
     <!-- Products Start -->
     <div class="container-fluid py-5">
