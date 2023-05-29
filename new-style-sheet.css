@@ -34,7 +34,7 @@
 
 /* for add new-istandul-dondurma */
 .new-istandul-dondurma {
-  display: block;
+  display: none;
 }
 @media (min-width: 525px) {
   .new-istandul-dondurma {
@@ -44,12 +44,81 @@
 .top-links {
     display: block;
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .top-links {
     display: none;
   }
 }
 
+.mobile-head-nav-small {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: inline;
+}
+@media (min-width: 349px) {
+  .mobile-head-nav-small {
+    display: none;
+  }
+}
+
+.mobile-head-nav {
+  display: none;
+}
+@media (min-width: 350px) {
+  .mobile-head-nav {
+    display: inline;
+  }
+}
+@media (min-width: 525px) {
+  .mobile-head-nav {
+    display: none;
+  }
+}
+
+.barsize {
+  display: none;
+}
+@media (min-width: 350px) {
+  .barsize  {
+    display: inline;
+    font-size: 16px;
+  }
+}
+@media (min-width: 459px) {
+  .barsize  {
+    display: inline;
+    font-size: 20px;
+  }
+}
+@media (min-width: 525px) {
+  .barsize  {
+    display: none;
+  }
+}
+
+.full-adjust {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: none;
+}
+@media (min-width: 992px) {
+  .full-adjust {
+    display: inline;
+  }
+}
+@media (min-width: 1144px) {
+  .full-adjust {
+    display: none;
+  }
+}
+
+.end-adjust {
+  display: none;
+}
+
+@media (min-width: 1145px) {
+  .end-adjust {
+    display: inline;
+  }
+}
 .top-nav {
   background-color: #10acb4;
 }
@@ -58,4 +127,19 @@
 }
 .tricky {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/*twitter*/
+.twitter_adjust {
+  display: none;
+}
+@media (min-width: 350px) {
+  .twitter_adjust {
+    display: inline;
+  }
+}
+@media (min-width: 768px) {
+  .twitter_adjust {
+    display: none;
+  }
 }
