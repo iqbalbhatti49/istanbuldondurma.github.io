@@ -92,7 +92,7 @@
   width: 8px;
   height: 46px;
   border-radius: 3px;
-  background: linear-gradient(to bottom, #818282 50%, #727373 50%);
+  background: rgb(16, 172, 180);
   position: absolute;
   top: -22px;
   z-index: 1;
@@ -128,7 +128,7 @@
   font-size: 16px;
   color: #fff;
   text-transform: uppercase;
-  background: #d9d9d8;
+  background: rgb(241, 149, 178);
   padding: 8px 25px;
   margin: 30px 0;
   transition: all 0.3s ease 0s;
