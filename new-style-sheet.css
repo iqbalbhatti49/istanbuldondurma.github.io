@@ -44,7 +44,7 @@
 .top-links {
     display: block;
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .top-links {
     display: none;
   }
