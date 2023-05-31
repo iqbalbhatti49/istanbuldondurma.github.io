@@ -192,8 +192,7 @@
   height: 4.7em;
   width: 15em;
   
-  transform: rotatez(45deg);
-
+  transform: rotatez(42deg);
   background-color: rgb(255, 0, 0);
   z-index:-1;
 }
