@@ -28,7 +28,8 @@
 }
 .pricingTable10 .heading {
   font-size: 30px;
-  color: #fff;
+  color: rgb(54, 49, 49);
+  text-shadow: .5px .5px white;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-top: 0;
@@ -38,7 +39,8 @@
   position: relative;
   font-size: 50px;
   font-weight: 700;
-  color: rgb(82, 69, 69);
+  color: white;
+  text-shadow: 3px 1px black;
   transition: all 0.3s ease 0s;
 }
 .pricingTable10:hover .price-value {
@@ -50,7 +52,7 @@
   position: absolute;
   top: 4px;
   left: -40px;
-  color: rgb(236, 223, 223);
+  color: rgb(255, 255, 255);
 }
 .pricingTable10 .month {
   font-size: 16px;
@@ -143,4 +145,55 @@
   .pricingTable10 {
     margin-bottom: 25px;
   }
+}
+
+
+/* style for coupon */
+
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.box {
+  position: relative;
+  width: 500px;
+  height: 426px;
+  background-color: #ddd;
+  overflow: hidden;
+  box-shadow: 2px 1px 8px black;
+}
+
+.ribbon {
+  position: absolute;
+  display: inline-block;
+  /* overflow: hidden; */
+  
+  top: 1.3em;
+  right: 1em;
+  margin-top: -8px;
+  max-width: 4em;
+  
+  color: #fff;
+  text-shadow: px px black;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.ribbon::after {
+  position: absolute;
+  top: -1.3em;
+  right: -6em;
+  content: "";
+  
+  height: 4.7em;
+  width: 15em;
+  
+  transform: rotatez(45deg);
+
+  background-color: rgb(255, 0, 0);
+  z-index:-1;
 }
