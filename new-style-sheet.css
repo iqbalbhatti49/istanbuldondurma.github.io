@@ -143,3 +143,15 @@
     display: none;
   }
 }
+
+
+/* bg-branch */
+.bg-branch {
+  background-color: white;
+}
+.bg-branch:hover {
+  background-color: #10acb4;
+}
+.bg-branch:hover .branch-name {
+  color: white;
+}
