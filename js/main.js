@@ -133,3 +133,32 @@
     
 })(jQuery);
 
+
+// this code for email subscribing
+var validateBtn = document.querySelector("#validateBtn");
+var emailInput = document.querySelector("#email");
+var errorDiv = document.querySelector("#error");
+
+function validateEmailFormat(email) {
+    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailPattern.test(email);
+}
+
+document.querySelector('.submit-email').addEventListener('mousedown', (e) => {
+    e.preventDefault();
+    // document.querySelector('.subscription').classList.add('done');
+    // validateBtn.addEventListener("click", function() {
+        var email = emailInput.value.trim();
+        if (email === "") {
+            errorDiv.innerHTML = "Please! Enter your Email address";
+          }
+          else if (validateEmailFormat(email)) {
+              errorDiv.style.display = "none";
+              document.querySelector('.subscription').classList.add('done');
+          } else {
+            errorDiv.style.display = "block";
+            errorDiv.style.color = "red";
+            errorDiv.textContent = email+" is not valid Email";
+          }
+    // })
+});
