@@ -977,7 +977,7 @@
     </div>
     <!-- Team End -->
 
-    <!-- Testimonial Start -->
+    <!-- Review Start -->
     <div class="container-fluid py-5">
       <div class="container py-5">
         <div class="row justify-content-center">
@@ -1042,7 +1042,25 @@
         </div>
       </div>
     </div>
-    <!-- Testimonial End -->
+    <!-- Review End -->
+    
+    <!-- Start Email Subscribing -->
+    <div class="container-fluid py-5 email-set" >
+      <div class="container-email">
+        <div class="content-email">
+          <form class="subscription" name="submit-to-google-sheet">
+            <label for="email"></label>
+            <input class="add-email" type="email" name="email" id="email" required placeholder="subscribe@me.now">
+            <button class="submit-email" type="submit" id="validateBtn">
+              <span class="before-submit">Subscribe</span>
+              <span class="after-submit" id="after-submit">Thank you for subscribing!</span>
+             </button>
+          </form>
+        </div>
+      </div>
+      <div id="error" style="text-align: center; display:none; padding:10px;"></div>
+    </div>
+    <!-- End Email Subscribing -->
 
     <!-- Footer Start -->
     <div class="container-fluid footer bg-light py-5" style="margin-top: 90px">
@@ -1137,5 +1155,18 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    
+    <!-- this script only for Email Subscribing -->
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbybSsKfviNHUow2Pbl8p1ERmJG4YK8bqo3Bhz4PAhRCoiC5laWoei_DJ_s7DJNcl84/exec'
+      const form = document.forms['submit-to-google-sheet']
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {})
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
   </body>
 </html>
