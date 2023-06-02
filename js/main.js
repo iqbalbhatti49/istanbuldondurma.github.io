@@ -156,17 +156,12 @@ document.querySelector('.submit-email').addEventListener('mousedown', (e) => {
               errorDiv.style.display = "none";
               document.querySelector('.subscription').classList.add('done');
               
-              validateBtn.addEventListener("click", function() {
-                setTimeout(() => {
-                    emailInput.disabled = true;
-                }, 1000);
-            })
             validateBtn.addEventListener("click", function() {
                 setTimeout(function() {
                     emailInput.disabled = true;
                     // emailInput.value = "";
                     this.disabled = true;
-                }, 3000)
+                }, 1500)
             })
           } else {
             errorDiv.style.display = "block";
