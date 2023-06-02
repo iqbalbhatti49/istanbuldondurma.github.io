@@ -155,8 +155,19 @@ document.querySelector('.submit-email').addEventListener('mousedown', (e) => {
           else if (validateEmailFormat(email)) {
               errorDiv.style.display = "none";
               document.querySelector('.subscription').classList.add('done');
-              emailInput.disabled = True;
-              emailInput.value = '';
+              
+              validateBtn.addEventListener("click", function() {
+                setTimeout(() => {
+                    emailInput.disabled = true;
+                }, 1000);
+            })
+            validateBtn.addEventListener("click", function() {
+                setTimeout(function() {
+                    emailInput.disabled = true;
+                    // emailInput.value = "";
+                    this.disabled = true;
+                }, 3000)
+            })
           } else {
             errorDiv.style.display = "block";
             errorDiv.style.color = "red";
