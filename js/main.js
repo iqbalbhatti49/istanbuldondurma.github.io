@@ -155,6 +155,8 @@ document.querySelector('.submit-email').addEventListener('mousedown', (e) => {
           else if (validateEmailFormat(email)) {
               errorDiv.style.display = "none";
               document.querySelector('.subscription').classList.add('done');
+              emailInput.disabled = True;
+              emailInput.value = '';
           } else {
             errorDiv.style.display = "block";
             errorDiv.style.color = "red";
