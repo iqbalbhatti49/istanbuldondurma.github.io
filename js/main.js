@@ -159,9 +159,8 @@ document.querySelector('.submit-email').addEventListener('mousedown', (e) => {
             validateBtn.addEventListener("click", function() {
                 setTimeout(function() {
                     emailInput.disabled = true;
-                    // emailInput.value = "";
                     this.disabled = true;
-                }, 1500)
+                }, 1200)
             })
           } else {
             errorDiv.style.display = "block";
